@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 from google.cloud import firestore
+from google.oauth2 import service_account
 
 # Authenticate to Firestore with the toml account key.
 key_dict = json.loads(st.secrets["textkey"])
